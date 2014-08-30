@@ -1,0 +1,130 @@
+﻿document.write("<script src='/static/js/jquery.json.js'></script>");
+$(document).ajaxSend(function (event, xhr, settings) {
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie != '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    function sameOrigin(url) {
+        // url could be relative or scheme relative or absolute
+        var host = document.location.host; // host + port
+        var protocol = document.location.protocol;
+        var sr_origin = '//' + host;
+        var origin = protocol + sr_origin;
+        // Allow absolute or scheme relative URLs to same origin
+        return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
+            (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
+        // or any other URL that isn't scheme relative or absolute i.e relative.
+            !(/^(\/\/|http:|https:).*/.test(url));
+    }
+    function safeMethod(method) {
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+
+    if (!safeMethod(settings.type) && sameOrigin(settings.url)) {
+        xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+    }
+});
+
+$(document).ready(function () {
+    $("a.mark").bind("click", function (e) {
+        e.preventDefault();
+        $(this.parentNode).removeClass('darkview').addClass('darkview_active');
+        $(this.parentNode.parentNode).removeClass('right').addClass('right_active');
+        //    			$(this.parentNode).css({"opacity":"1"});
+        //    			$(this.parentNode.parentNode).css({"opacity":"1"});
+        //   var str='<?xml version="1.0" encoding="UTF-8"?><annotation></annotation>';
+        //		$.ajax({
+        //		url:'/annotation/process/',
+        //		processData:false,
+        //		type:"POST",
+        //		data:str,
+        //		success:function(response){
+        //			alert(response);},
+        //		error:function(response){
+        //			alert('error:'+response);}
+        //		});
+    });
+    $("a.cancel").bind("click", function (e) {
+        e.preventDefault();
+        $(this.parentNode).removeClass('darkview_active').addClass('darkview');
+        $(this.parentNode.parentNode).removeClass('right_active').addClass('right');
+        //   			$(this.parentNode).css({"opacity":"0"});
+        //    			$(this.parentNode.parentNode).css({"opacity":"0"});
+        //					$(this.parentNode.parentNode.parentNode).hover(
+        //					function(){
+        //						$(this).css("opacity","1");
+        //						});
+    });
+
+
+    $('.annotation').click(function () {
+        var $darkview = $("span.darkview_active");
+        var len = $darkview.length;
+        var i = 0;
+        var arrayid = new Array()
+        for (i = 0; i < len; i++) {
+            arrayid.push($darkview.eq(i).children('a.mark').attr('id'));
+        }
+        var keyid = $(".keyinfo").attr('id');
+        var studentid = $(".nav").attr('id');
+        var log = {};
+        log['picids'] = arrayid;
+        log['keyid'] = keyid;
+        log['studentid'] = studentid;
+        var json_log = $.toJSON(log);
+        var response = { wordid: keyid, picids: arrayid,studentid:studentid }
+        json_log = JSON.stringify(response)
+        $.post('/annotation/process', json_log,
+	function (data) { });
+        
+        //	$.ajax({
+        //	url:'/annotation/process/',
+        //	processData:false,
+        //	type:"POST",
+        //	data:log,
+        //	success:function(response){
+        //		alert(response);},
+        //	error:function(response){
+        //		alert('error:'+response);}
+        //	});
+
+        $("span.darkview_active").removeClass('darkview_active').addClass('darkview');
+        $("section.right_active").removeClass('right_active').addClass('right');
+
+    })
+});
+function jax() {
+    $.post("/annotation/process", function (data) {
+        alert(data);
+    });
+};
+
+function SendXML() {
+    var str = '<?xml version="1.0" encoding="UTF-8"?><annotation></annotation>';
+    $.ajax({
+        url: '/annotation/process',
+        processData: false,
+        type: "POST",
+        data: xmlAnno,
+        success: function (response) {
+            alert(response);
+        },
+        error: function (response) {
+            alert('error:' + response);
+        }
+    });
+}
+
+
+

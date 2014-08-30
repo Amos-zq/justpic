@@ -1,0 +1,81 @@
+import os
+import MySQLdb
+		
+class pic:
+	def __init__(self):
+		self.name=''
+		self.path=''
+		
+def search(folder, filter, piclist):
+    folders = os.listdir(folder)
+    global id
+    for name in folders:
+        curname = os.path.join(folder, name)
+        isfile = os.path.isfile(curname)
+        if isfile:
+            ext = os.path.splitext(curname)[1]
+            count = filter.count(ext)
+            if count>0:
+                cur = pic()
+                cur.name=name
+                cur.path = os.path.normcase(curname[29:])         
+                piclist.append(cur)
+        else:
+            search(curname, filter, piclist)
+    return piclist
+ 
+#database process
+class BlobDataTestor:
+		def __init__(self):
+			self.conn=MySQLdb.connect(host='127.0.0.1',user='root',passwd='123654',db='pr_site')
+		def __del__(self):
+			try:
+				self.conn.close()
+			except:
+				pass
+		def closedb(self):
+			self.conn.close()
+		
+		def setup(self):
+			cursor=self.conn.cursor()
+			cursor.execute("""CREATE TABLE IF NOT EXISTS `5k` (
+  		`picid` int(11) NOT NULL AUTO_INCREMENT,
+  		`picname` varchar(30) NOT NULL,
+  		`picpath` varchar(100) NOT NULL,
+		  PRIMARY KEY (`picid`)
+			) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8""")	
+		def teardown(self):
+			cursor=self.conn.cursor()
+			try:
+				cursor.execute("Drop Table Picture")
+			except:
+				pass
+		def testRWBlobData(self):
+			filter=[".jpg",".png",".jpeg"]
+			piclist = []
+			path="E:\\project\\PR_Site\\annotation\\media\\pictures\\5k"
+			search(path, filter, piclist)
+#			print piclist
+			for pic in piclist:
+#				f=open(pic.path,"rb")
+#				b=f.read()
+#				f.close()
+				cursor=self.conn.cursor()
+				cursor.execute("INSERT INTO 5k(picname,picpath)VALUES(%s,%s)",(pic.name,pic.path))
+	#		cursor.execute("SELECT PicData FROM Picture ORDER BY ID DESC limit 1")
+	#		d=cursor.fetchone()[0]
+			cursor.close()
+			
+#			f=open("C:\\ex2.jpg","wb")
+#			f.write(d)
+#			f.close()
+								
+if __name__=="__main__":
+	test = BlobDataTestor()
+	try:
+		test.setup()
+		test.testRWBlobData()
+
+	finally:
+		test.closedb()
+		   

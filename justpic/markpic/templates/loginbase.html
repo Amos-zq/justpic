@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+	{% if form.errors %}
+		<p class="error">Sorry,that's not a valid or password</p>
+	{% endif %}
+	
+	<form action='/loginprocess' method='post'> 
+		<label for="studentid">User name:</label>
+		<input type="text" name="studentid" value="" id="studentid">
+		<label for="password">Password:</label>
+		<input type="password" name="password" value="" id="password">
+		<input type="submit" value="login"/>
+	</form>
+	{{ infomation }}
+{% endblock %}
+
+		

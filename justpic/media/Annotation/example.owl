@@ -1,0 +1,1034 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY owl "http://www.w3.org/2002/07/owl">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema">
+<!ENTITY protegedc "http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl">
+<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+<!ENTITY dcterms "http://purl.org/dc/terms/">
+<!ENTITY PR_Site "http://localhost:8080">
+<!ENTITY Annotation "http://localhost:8080/annotation">
+<!ENTITY annotation "file:/./annotation.owl">
+]>
+<rdf:RDF xmlns:rdf="&rdf;#" xmlns:owl="&owl;#" xmlns:xsd="&xsd;#" xmlns:rdfs="&rdfs;#" xmlns:protegedc="&protegedc;#" xmlns:dc="&dc;" xmlns:dcterms="&dcterms;" xmlns:PR_Site="&PR_Site;#" xmlns:Annotation="&Annotation;#" xmlns:base="&annotation;#" xmlns="&annotation;#">
+  <Annotation rdf:ID="Annotaion_"/>
+  <Source rdf:ID="Source"/>
+  <Object rdf:ID="Object_1"/>
+  <Object rdf:ID="Object_2"/>
+  <Object rdf:ID="Object_3"/>
+  <Object rdf:ID="Object_4"/>
+  <Object rdf:ID="Object_5"/>
+  <Object rdf:ID="Object_6"/>
+  <Polygon rdf:ID="Polygon_1"/>
+  <Polygon rdf:ID="Polygon_2"/>
+  <Polygon rdf:ID="Polygon_3"/>
+  <Polygon rdf:ID="Polygon_4"/>
+  <Polygon rdf:ID="Polygon_5"/>
+  <Polygon rdf:ID="Polygon_6"/>
+  <Pt rdf:ID="Pt_1"/>
+  <Pt rdf:ID="Pt_2"/>
+  <Pt rdf:ID="Pt_3"/>
+  <Pt rdf:ID="Pt_4"/>
+  <Pt rdf:ID="Pt_5"/>
+  <Pt rdf:ID="Pt_6"/>
+  <Pt rdf:ID="Pt_7"/>
+  <Pt rdf:ID="Pt_8"/>
+  <Pt rdf:ID="Pt_9"/>
+  <Pt rdf:ID="Pt_10"/>
+  <Pt rdf:ID="Pt_11"/>
+  <Pt rdf:ID="Pt_12"/>
+  <Pt rdf:ID="Pt_13"/>
+  <Pt rdf:ID="Pt_14"/>
+  <Pt rdf:ID="Pt_15"/>
+  <Pt rdf:ID="Pt_16"/>
+  <Pt rdf:ID="Pt_17"/>
+  <Pt rdf:ID="Pt_18"/>
+  <Pt rdf:ID="Pt_19"/>
+  <Pt rdf:ID="Pt_20"/>
+  <Pt rdf:ID="Pt_21"/>
+  <Pt rdf:ID="Pt_22"/>
+  <Pt rdf:ID="Pt_23"/>
+  <Pt rdf:ID="Pt_24"/>
+  <Pt rdf:ID="Pt_25"/>
+  <Pt rdf:ID="Pt_26"/>
+  <Pt rdf:ID="Pt_27"/>
+  <Pt rdf:ID="Pt_28"/>
+  <Pt rdf:ID="Pt_29"/>
+  <Pt rdf:ID="Pt_30"/>
+  <Pt rdf:ID="Pt_31"/>
+  <Pt rdf:ID="Pt_32"/>
+  <Pt rdf:ID="Pt_33"/>
+  <Pt rdf:ID="Pt_34"/>
+  <Pt rdf:ID="Pt_35"/>
+  <Pt rdf:ID="Pt_36"/>
+  <Pt rdf:ID="Pt_37"/>
+  <Pt rdf:ID="Pt_38"/>
+  <Pt rdf:ID="Pt_39"/>
+  <Pt rdf:ID="Pt_40"/>
+  <Pt rdf:ID="Pt_41"/>
+  <Pt rdf:ID="Pt_42"/>
+  <Pt rdf:ID="Pt_43"/>
+  <Pt rdf:ID="Pt_44"/>
+  <Pt rdf:ID="Pt_45"/>
+  <Pt rdf:ID="Pt_46"/>
+  <Pt rdf:ID="Pt_47"/>
+  <Pt rdf:ID="Pt_48"/>
+  <Pt rdf:ID="Pt_49"/>
+  <Pt rdf:ID="Pt_50"/>
+  <Pt rdf:ID="Pt_51"/>
+  <Pt rdf:ID="Pt_52"/>
+  <Pt rdf:ID="Pt_53"/>
+  <Pt rdf:ID="Pt_54"/>
+  <Pt rdf:ID="Pt_55"/>
+  <Pt rdf:ID="Pt_56"/>
+  <Pt rdf:ID="Pt_57"/>
+  <Pt rdf:ID="Pt_58"/>
+  <Pt rdf:ID="Pt_59"/>
+  <Pt rdf:ID="Pt_60"/>
+  <Pt rdf:ID="Pt_61"/>
+  <Pt rdf:ID="Pt_62"/>
+  <Pt rdf:ID="Pt_63"/>
+  <Pt rdf:ID="Pt_64"/>
+  <Pt rdf:ID="Pt_65"/>
+  <Pt rdf:ID="Pt_66"/>
+  <Pt rdf:ID="Pt_67"/>
+  <Pt rdf:ID="Pt_68"/>
+  <Pt rdf:ID="Pt_69"/>
+  <Pt rdf:ID="Pt_70"/>
+  <Pt rdf:ID="Pt_71"/>
+  <Pt rdf:ID="Pt_72"/>
+  <Pt rdf:ID="Pt_73"/>
+  <Pt rdf:ID="Pt_74"/>
+  <Pt rdf:ID="Pt_75"/>
+  <Pt rdf:ID="Pt_76"/>
+  <Pt rdf:ID="Pt_77"/>
+  <Pt rdf:ID="Pt_78"/>
+  <Pt rdf:ID="Pt_79"/>
+  <Pt rdf:ID="Pt_80"/>
+  <Pt rdf:ID="Pt_81"/>
+  <Pt rdf:ID="Pt_82"/>
+  <Pt rdf:ID="Pt_83"/>
+  <Pt rdf:ID="Pt_84"/>
+  <Pt rdf:ID="Pt_85"/>
+  <Pt rdf:ID="Pt_86"/>
+  <Pt rdf:ID="Pt_87"/>
+  <Pt rdf:ID="Pt_88"/>
+  <Pt rdf:ID="Pt_89"/>
+  <Pt rdf:ID="Pt_90"/>
+  <Pt rdf:ID="Pt_91"/>
+  <Pt rdf:ID="Pt_92"/>
+  <Pt rdf:ID="Pt_93"/>
+  <Pt rdf:ID="Pt_94"/>
+  <Pt rdf:ID="Pt_95"/>
+  <Pt rdf:ID="Pt_96"/>
+  <Pt rdf:ID="Pt_97"/>
+  <Pt rdf:ID="Pt_98"/>
+  <Pt rdf:ID="Pt_99"/>
+  <Pt rdf:ID="Pt_100"/>
+  <Pt rdf:ID="Pt_101"/>
+  <Pt rdf:ID="Pt_102"/>
+  <Pt rdf:ID="Pt_103"/>
+  <Pt rdf:ID="Pt_104"/>
+  <Pt rdf:ID="Pt_105"/>
+  <Pt rdf:ID="Pt_106"/>
+  <Pt rdf:ID="Pt_107"/>
+  <Pt rdf:ID="Pt_108"/>
+  <Pt rdf:ID="Pt_109"/>
+  <Annotation rdf:about="#Annotaion_">
+    <HasAttribute rdf:resource="#Source"/>
+  </Annotation>
+  <Annotation rdf:about="#Annotaion_">
+    <Relation rdf:resource="#Object_1"/>
+    <Relation rdf:resource="#Object_2"/>
+    <Relation rdf:resource="#Object_3"/>
+    <Relation rdf:resource="#Object_4"/>
+    <Relation rdf:resource="#Object_5"/>
+    <Relation rdf:resource="#Object_6"/>
+  </Annotation>
+  <Object rdf:about="#Object_1">
+    <Relation rdf:resource="#Polygon_1"/>
+  </Object>
+  <Object rdf:about="#Object_2">
+    <Relation rdf:resource="#Polygon_1"/>
+  </Object>
+  <Object rdf:about="#Object_3">
+    <Relation rdf:resource="#Polygon_1"/>
+  </Object>
+  <Object rdf:about="#Object_4">
+    <Relation rdf:resource="#Polygon_1"/>
+  </Object>
+  <Object rdf:about="#Object_5">
+    <Relation rdf:resource="#Polygon_1"/>
+  </Object>
+  <Object rdf:about="#Object_6">
+    <Relation rdf:resource="#Polygon_1"/>
+  </Object>
+  <Polygon rdf:about="#Polygon_1">
+    <Relation rdf:resource="#Pt_1"/>
+    <Relation rdf:resource="#Pt_2"/>
+    <Relation rdf:resource="#Pt_3"/>
+    <Relation rdf:resource="#Pt_4"/>
+    <Relation rdf:resource="#Pt_5"/>
+    <Relation rdf:resource="#Pt_6"/>
+    <Relation rdf:resource="#Pt_7"/>
+    <Relation rdf:resource="#Pt_8"/>
+    <Relation rdf:resource="#Pt_9"/>
+    <Relation rdf:resource="#Pt_10"/>
+    <Relation rdf:resource="#Pt_11"/>
+    <Relation rdf:resource="#Pt_12"/>
+    <Relation rdf:resource="#Pt_13"/>
+    <Relation rdf:resource="#Pt_14"/>
+    <Relation rdf:resource="#Pt_15"/>
+    <Relation rdf:resource="#Pt_16"/>
+    <Relation rdf:resource="#Pt_17"/>
+    <Relation rdf:resource="#Pt_18"/>
+    <Relation rdf:resource="#Pt_19"/>
+    <Relation rdf:resource="#Pt_20"/>
+    <Relation rdf:resource="#Pt_21"/>
+    <Relation rdf:resource="#Pt_22"/>
+    <Relation rdf:resource="#Pt_23"/>
+    <Relation rdf:resource="#Pt_24"/>
+    <Relation rdf:resource="#Pt_25"/>
+    <Relation rdf:resource="#Pt_26"/>
+    <Relation rdf:resource="#Pt_27"/>
+    <Relation rdf:resource="#Pt_28"/>
+    <Relation rdf:resource="#Pt_29"/>
+    <Relation rdf:resource="#Pt_30"/>
+    <Relation rdf:resource="#Pt_31"/>
+    <Relation rdf:resource="#Pt_32"/>
+    <Relation rdf:resource="#Pt_33"/>
+    <Relation rdf:resource="#Pt_34"/>
+    <Relation rdf:resource="#Pt_35"/>
+    <Relation rdf:resource="#Pt_36"/>
+    <Relation rdf:resource="#Pt_37"/>
+    <Relation rdf:resource="#Pt_38"/>
+    <Relation rdf:resource="#Pt_39"/>
+    <Relation rdf:resource="#Pt_40"/>
+    <Relation rdf:resource="#Pt_41"/>
+    <Relation rdf:resource="#Pt_42"/>
+    <Relation rdf:resource="#Pt_43"/>
+    <Relation rdf:resource="#Pt_44"/>
+    <Relation rdf:resource="#Pt_45"/>
+    <Relation rdf:resource="#Pt_46"/>
+    <Relation rdf:resource="#Pt_47"/>
+    <Relation rdf:resource="#Pt_48"/>
+    <Relation rdf:resource="#Pt_49"/>
+    <Relation rdf:resource="#Pt_50"/>
+    <Relation rdf:resource="#Pt_51"/>
+    <Relation rdf:resource="#Pt_52"/>
+    <Relation rdf:resource="#Pt_53"/>
+    <Relation rdf:resource="#Pt_54"/>
+    <Relation rdf:resource="#Pt_55"/>
+    <Relation rdf:resource="#Pt_56"/>
+    <Relation rdf:resource="#Pt_57"/>
+    <Relation rdf:resource="#Pt_58"/>
+    <Relation rdf:resource="#Pt_59"/>
+    <Relation rdf:resource="#Pt_60"/>
+    <Relation rdf:resource="#Pt_61"/>
+    <Relation rdf:resource="#Pt_62"/>
+    <Relation rdf:resource="#Pt_63"/>
+    <Relation rdf:resource="#Pt_64"/>
+    <Relation rdf:resource="#Pt_65"/>
+    <Relation rdf:resource="#Pt_66"/>
+    <Relation rdf:resource="#Pt_67"/>
+    <Relation rdf:resource="#Pt_68"/>
+    <Relation rdf:resource="#Pt_69"/>
+    <Relation rdf:resource="#Pt_70"/>
+    <Relation rdf:resource="#Pt_71"/>
+    <Relation rdf:resource="#Pt_72"/>
+    <Relation rdf:resource="#Pt_73"/>
+    <Relation rdf:resource="#Pt_74"/>
+    <Relation rdf:resource="#Pt_75"/>
+    <Relation rdf:resource="#Pt_76"/>
+    <Relation rdf:resource="#Pt_77"/>
+    <Relation rdf:resource="#Pt_78"/>
+    <Relation rdf:resource="#Pt_79"/>
+    <Relation rdf:resource="#Pt_80"/>
+    <Relation rdf:resource="#Pt_81"/>
+    <Relation rdf:resource="#Pt_82"/>
+    <Relation rdf:resource="#Pt_83"/>
+    <Relation rdf:resource="#Pt_84"/>
+    <Relation rdf:resource="#Pt_85"/>
+    <Relation rdf:resource="#Pt_86"/>
+    <Relation rdf:resource="#Pt_87"/>
+    <Relation rdf:resource="#Pt_88"/>
+    <Relation rdf:resource="#Pt_89"/>
+    <Relation rdf:resource="#Pt_90"/>
+    <Relation rdf:resource="#Pt_91"/>
+    <Relation rdf:resource="#Pt_92"/>
+    <Relation rdf:resource="#Pt_93"/>
+    <Relation rdf:resource="#Pt_94"/>
+    <Relation rdf:resource="#Pt_95"/>
+    <Relation rdf:resource="#Pt_96"/>
+    <Relation rdf:resource="#Pt_97"/>
+    <Relation rdf:resource="#Pt_98"/>
+    <Relation rdf:resource="#Pt_99"/>
+    <Relation rdf:resource="#Pt_100"/>
+    <Relation rdf:resource="#Pt_101"/>
+    <Relation rdf:resource="#Pt_102"/>
+    <Relation rdf:resource="#Pt_103"/>
+    <Relation rdf:resource="#Pt_104"/>
+    <Relation rdf:resource="#Pt_105"/>
+    <Relation rdf:resource="#Pt_106"/>
+    <Relation rdf:resource="#Pt_107"/>
+    <Relation rdf:resource="#Pt_108"/>
+    <Relation rdf:resource="#Pt_109"/>
+  </Polygon>
+  <Annotation rdf:about="#Annotaion_">
+    <FileName rdf:datatype="&xsd;#string">coast_arnat59.jpg</FileName>
+  </Annotation>
+  <Annotation rdf:about="#Annotaion_">
+    <IsInFolder rdf:datatype="&xsd;#string">spatial_envelope_256x256_static_8outdoorcategories</IsInFolder>
+  </Annotation>
+  <Source rdf:about="#Source">
+    <Source rdf:datatype="&xsd;#string">Aude Oliva and Antonio Torralba, IJCV 2001, vol 42(3).</Source>
+  </Source>
+  <Source rdf:about="#Source">
+    <SourceAnnotation rdf:datatype="&xsd;#string">LabelMe Webtool</SourceAnnotation>
+  </Source>
+  <Object rdf:about="#Object_1">
+    <Name rdf:datatype="&xsd;#string">boat</Name>
+  </Object>
+  <Object rdf:about="#Object_2">
+    <Name rdf:datatype="&xsd;#string">water sea</Name>
+  </Object>
+  <Object rdf:about="#Object_3">
+    <Name rdf:datatype="&xsd;#string">sky</Name>
+  </Object>
+  <Object rdf:about="#Object_4">
+    <Name rdf:datatype="&xsd;#string">person sitting</Name>
+  </Object>
+  <Object rdf:about="#Object_5">
+    <Name rdf:datatype="&xsd;#string">person sitting</Name>
+  </Object>
+  <Object rdf:about="#Object_6">
+    <Name rdf:datatype="&xsd;#string">jetski</Name>
+  </Object>
+  <Object rdf:about="#Object_1">
+    <IsDeleted rdf:datatype="&xsd;#boolean">0</IsDeleted>
+  </Object>
+  <Object rdf:about="#Object_2">
+    <IsDeleted rdf:datatype="&xsd;#boolean">0</IsDeleted>
+  </Object>
+  <Object rdf:about="#Object_3">
+    <IsDeleted rdf:datatype="&xsd;#boolean">0</IsDeleted>
+  </Object>
+  <Object rdf:about="#Object_4">
+    <IsDeleted rdf:datatype="&xsd;#boolean">0</IsDeleted>
+  </Object>
+  <Object rdf:about="#Object_5">
+    <IsDeleted rdf:datatype="&xsd;#boolean">0</IsDeleted>
+  </Object>
+  <Object rdf:about="#Object_6">
+    <IsDeleted rdf:datatype="&xsd;#boolean">0</IsDeleted>
+  </Object>
+  <Object rdf:about="#Object_1">
+    <IsVerified rdf:datatype="&xsd;#boolean">0</IsVerified>
+  </Object>
+  <Object rdf:about="#Object_2">
+    <IsVerified rdf:datatype="&xsd;#boolean">0</IsVerified>
+  </Object>
+  <Object rdf:about="#Object_3">
+    <IsVerified rdf:datatype="&xsd;#boolean">0</IsVerified>
+  </Object>
+  <Object rdf:about="#Object_4">
+    <IsVerified rdf:datatype="&xsd;#boolean">0</IsVerified>
+  </Object>
+  <Object rdf:about="#Object_5">
+    <IsVerified rdf:datatype="&xsd;#boolean">0</IsVerified>
+  </Object>
+  <Object rdf:about="#Object_6">
+    <IsVerified rdf:datatype="&xsd;#boolean">0</IsVerified>
+  </Object>
+  <Object rdf:about="#Object_1">
+    <Date rdf:datatype="&xsd;#string">25-Feb-2006 05:37:32</Date>
+  </Object>
+  <Object rdf:about="#Object_2">
+    <Date rdf:datatype="&xsd;#string">03-Jun-2006 02:34:04</Date>
+  </Object>
+  <Object rdf:about="#Object_3">
+    <Date rdf:datatype="&xsd;#string">09-Aug-2006 04:01:53</Date>
+  </Object>
+  <Object rdf:about="#Object_4">
+    <Date rdf:datatype="&xsd;#string">14-Nov-2006 07:14:35</Date>
+  </Object>
+  <Object rdf:about="#Object_5">
+    <Date rdf:datatype="&xsd;#string">14-Nov-2006 07:14:35</Date>
+  </Object>
+  <Object rdf:about="#Object_6">
+    <Date rdf:datatype="&xsd;#string">11-Jun-2007 23:49:37</Date>
+  </Object>
+  <Polygon rdf:about="#Polygon_1">
+    <UserName rdf:datatype="&xsd;#string">anonymous</UserName>
+  </Polygon>
+  <Polygon rdf:about="#Polygon_2">
+    <UserName rdf:datatype="&xsd;#string">anonymous</UserName>
+  </Polygon>
+  <Polygon rdf:about="#Polygon_3">
+    <UserName rdf:datatype="&xsd;#string">anonymous</UserName>
+  </Polygon>
+  <Polygon rdf:about="#Polygon_4">
+    <UserName rdf:datatype="&xsd;#string">anonymous</UserName>
+  </Polygon>
+  <Polygon rdf:about="#Polygon_5">
+    <UserName rdf:datatype="&xsd;#string">anonymous</UserName>
+  </Polygon>
+  <Polygon rdf:about="#Polygon_6">
+    <UserName rdf:datatype="&xsd;#string">anonymous</UserName>
+  </Polygon>
+  <Pt rdf:about="#Pt_1">
+    <XPosition rdf:datatype="&xsd;#integer">26</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_2">
+    <XPosition rdf:datatype="&xsd;#integer">146</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_3">
+    <XPosition rdf:datatype="&xsd;#integer">162</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_4">
+    <XPosition rdf:datatype="&xsd;#integer">140</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_5">
+    <XPosition rdf:datatype="&xsd;#integer">124</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_6">
+    <XPosition rdf:datatype="&xsd;#integer">118</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_7">
+    <XPosition rdf:datatype="&xsd;#integer">112</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_8">
+    <XPosition rdf:datatype="&xsd;#integer">89</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_9">
+    <XPosition rdf:datatype="&xsd;#integer">83</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_10">
+    <XPosition rdf:datatype="&xsd;#integer">77</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_11">
+    <XPosition rdf:datatype="&xsd;#integer">73</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_12">
+    <XPosition rdf:datatype="&xsd;#integer">72</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_13">
+    <XPosition rdf:datatype="&xsd;#integer">69</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_14">
+    <XPosition rdf:datatype="&xsd;#integer">66</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_15">
+    <XPosition rdf:datatype="&xsd;#integer">58</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_16">
+    <XPosition rdf:datatype="&xsd;#integer">49</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_17">
+    <XPosition rdf:datatype="&xsd;#integer">45</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_18">
+    <XPosition rdf:datatype="&xsd;#integer">42</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_19">
+    <XPosition rdf:datatype="&xsd;#integer">35</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_20">
+    <XPosition rdf:datatype="&xsd;#integer">32</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_21">
+    <XPosition rdf:datatype="&xsd;#integer">27</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_22">
+    <XPosition rdf:datatype="&xsd;#integer">22</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_23">
+    <XPosition rdf:datatype="&xsd;#integer">0</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_24">
+    <XPosition rdf:datatype="&xsd;#integer">256</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_25">
+    <XPosition rdf:datatype="&xsd;#integer">255</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_26">
+    <XPosition rdf:datatype="&xsd;#integer">0</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_27">
+    <XPosition rdf:datatype="&xsd;#integer">2</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_28">
+    <XPosition rdf:datatype="&xsd;#integer">10</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_29">
+    <XPosition rdf:datatype="&xsd;#integer">20</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_30">
+    <XPosition rdf:datatype="&xsd;#integer">27</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_31">
+    <XPosition rdf:datatype="&xsd;#integer">31</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_32">
+    <XPosition rdf:datatype="&xsd;#integer">34</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_33">
+    <XPosition rdf:datatype="&xsd;#integer">39</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_34">
+    <XPosition rdf:datatype="&xsd;#integer">43</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_35">
+    <XPosition rdf:datatype="&xsd;#integer">47</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_36">
+    <XPosition rdf:datatype="&xsd;#integer">57</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_37">
+    <XPosition rdf:datatype="&xsd;#integer">63</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_38">
+    <XPosition rdf:datatype="&xsd;#integer">70</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_39">
+    <XPosition rdf:datatype="&xsd;#integer">72</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_40">
+    <XPosition rdf:datatype="&xsd;#integer">77</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_41">
+    <XPosition rdf:datatype="&xsd;#integer">81</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_42">
+    <XPosition rdf:datatype="&xsd;#integer">89</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_43">
+    <XPosition rdf:datatype="&xsd;#integer">112</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_44">
+    <XPosition rdf:datatype="&xsd;#integer">117</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_45">
+    <XPosition rdf:datatype="&xsd;#integer">139</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_46">
+    <XPosition rdf:datatype="&xsd;#integer">160</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_47">
+    <XPosition rdf:datatype="&xsd;#integer">148</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_48">
+    <XPosition rdf:datatype="&xsd;#integer">255</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_49">
+    <XPosition rdf:datatype="&xsd;#integer">256</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_50">
+    <XPosition rdf:datatype="&xsd;#integer">2</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_51">
+    <XPosition rdf:datatype="&xsd;#integer">204</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_52">
+    <XPosition rdf:datatype="&xsd;#integer">200</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_53">
+    <XPosition rdf:datatype="&xsd;#integer">200</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_54">
+    <XPosition rdf:datatype="&xsd;#integer">205</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_55">
+    <XPosition rdf:datatype="&xsd;#integer">204</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_56">
+    <XPosition rdf:datatype="&xsd;#integer">208</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_57">
+    <XPosition rdf:datatype="&xsd;#integer">211</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_58">
+    <XPosition rdf:datatype="&xsd;#integer">212</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_59">
+    <XPosition rdf:datatype="&xsd;#integer">210</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_60">
+    <XPosition rdf:datatype="&xsd;#integer">214</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_61">
+    <XPosition rdf:datatype="&xsd;#integer">218</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_62">
+    <XPosition rdf:datatype="&xsd;#integer">228</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_63">
+    <XPosition rdf:datatype="&xsd;#integer">228</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_64">
+    <XPosition rdf:datatype="&xsd;#integer">232</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_65">
+    <XPosition rdf:datatype="&xsd;#integer">230</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_66">
+    <XPosition rdf:datatype="&xsd;#integer">226</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_67">
+    <XPosition rdf:datatype="&xsd;#integer">215</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_68">
+    <XPosition rdf:datatype="&xsd;#integer">209</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_69">
+    <XPosition rdf:datatype="&xsd;#integer">221</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_70">
+    <XPosition rdf:datatype="&xsd;#integer">224</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_71">
+    <XPosition rdf:datatype="&xsd;#integer">225</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_72">
+    <XPosition rdf:datatype="&xsd;#integer">234</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_73">
+    <XPosition rdf:datatype="&xsd;#integer">233</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_74">
+    <XPosition rdf:datatype="&xsd;#integer">229</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_75">
+    <XPosition rdf:datatype="&xsd;#integer">229</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_76">
+    <XPosition rdf:datatype="&xsd;#integer">228</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_77">
+    <XPosition rdf:datatype="&xsd;#integer">225</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_78">
+    <XPosition rdf:datatype="&xsd;#integer">226</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_79">
+    <XPosition rdf:datatype="&xsd;#integer">221</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_80">
+    <XPosition rdf:datatype="&xsd;#integer">215</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_81">
+    <XPosition rdf:datatype="&xsd;#integer">212</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_82">
+    <XPosition rdf:datatype="&xsd;#integer">215</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_83">
+    <XPosition rdf:datatype="&xsd;#integer">217</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_84">
+    <XPosition rdf:datatype="&xsd;#integer">218</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_85">
+    <XPosition rdf:datatype="&xsd;#integer">202</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_86">
+    <XPosition rdf:datatype="&xsd;#integer">196</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_87">
+    <XPosition rdf:datatype="&xsd;#integer">192</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_88">
+    <XPosition rdf:datatype="&xsd;#integer">186</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_89">
+    <XPosition rdf:datatype="&xsd;#integer">182</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_90">
+    <XPosition rdf:datatype="&xsd;#integer">181</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_91">
+    <XPosition rdf:datatype="&xsd;#integer">184</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_92">
+    <XPosition rdf:datatype="&xsd;#integer">202</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_93">
+    <XPosition rdf:datatype="&xsd;#integer">205</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_94">
+    <XPosition rdf:datatype="&xsd;#integer">202</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_95">
+    <XPosition rdf:datatype="&xsd;#integer">205</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_96">
+    <XPosition rdf:datatype="&xsd;#integer">210</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_97">
+    <XPosition rdf:datatype="&xsd;#integer">243</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_98">
+    <XPosition rdf:datatype="&xsd;#integer">254</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_99">
+    <XPosition rdf:datatype="&xsd;#integer">254</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_100">
+    <XPosition rdf:datatype="&xsd;#integer">249</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_101">
+    <XPosition rdf:datatype="&xsd;#integer">244</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_102">
+    <XPosition rdf:datatype="&xsd;#integer">243</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_103">
+    <XPosition rdf:datatype="&xsd;#integer">238</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_104">
+    <XPosition rdf:datatype="&xsd;#integer">231</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_105">
+    <XPosition rdf:datatype="&xsd;#integer">234</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_106">
+    <XPosition rdf:datatype="&xsd;#integer">230</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_107">
+    <XPosition rdf:datatype="&xsd;#integer">226</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_108">
+    <XPosition rdf:datatype="&xsd;#integer">215</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_109">
+    <XPosition rdf:datatype="&xsd;#integer">208</XPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_1">
+    <YPosition rdf:datatype="&xsd;#integer">128</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_2">
+    <YPosition rdf:datatype="&xsd;#integer">128</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_3">
+    <YPosition rdf:datatype="&xsd;#integer">116</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_4">
+    <YPosition rdf:datatype="&xsd;#integer">115</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_5">
+    <YPosition rdf:datatype="&xsd;#integer">104</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_6">
+    <YPosition rdf:datatype="&xsd;#integer">98</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_7">
+    <YPosition rdf:datatype="&xsd;#integer">103</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_8">
+    <YPosition rdf:datatype="&xsd;#integer">103</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_9">
+    <YPosition rdf:datatype="&xsd;#integer">100</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_10">
+    <YPosition rdf:datatype="&xsd;#integer">88</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_11">
+    <YPosition rdf:datatype="&xsd;#integer">87</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_12">
+    <YPosition rdf:datatype="&xsd;#integer">94</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_13">
+    <YPosition rdf:datatype="&xsd;#integer">99</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_14">
+    <YPosition rdf:datatype="&xsd;#integer">105</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_15">
+    <YPosition rdf:datatype="&xsd;#integer">106</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_16">
+    <YPosition rdf:datatype="&xsd;#integer">97</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_17">
+    <YPosition rdf:datatype="&xsd;#integer">98</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_18">
+    <YPosition rdf:datatype="&xsd;#integer">111</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_19">
+    <YPosition rdf:datatype="&xsd;#integer">111</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_20">
+    <YPosition rdf:datatype="&xsd;#integer">116</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_21">
+    <YPosition rdf:datatype="&xsd;#integer">116</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_22">
+    <YPosition rdf:datatype="&xsd;#integer">121</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_23">
+    <YPosition rdf:datatype="&xsd;#integer">128</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_24">
+    <YPosition rdf:datatype="&xsd;#integer">126</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_25">
+    <YPosition rdf:datatype="&xsd;#integer">255</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_26">
+    <YPosition rdf:datatype="&xsd;#integer">255</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_27">
+    <YPosition rdf:datatype="&xsd;#integer">111</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_28">
+    <YPosition rdf:datatype="&xsd;#integer">113</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_29">
+    <YPosition rdf:datatype="&xsd;#integer">120</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_30">
+    <YPosition rdf:datatype="&xsd;#integer">114</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_31">
+    <YPosition rdf:datatype="&xsd;#integer">115</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_32">
+    <YPosition rdf:datatype="&xsd;#integer">110</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_33">
+    <YPosition rdf:datatype="&xsd;#integer">110</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_34">
+    <YPosition rdf:datatype="&xsd;#integer">97</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_35">
+    <YPosition rdf:datatype="&xsd;#integer">97</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_36">
+    <YPosition rdf:datatype="&xsd;#integer">105</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_37">
+    <YPosition rdf:datatype="&xsd;#integer">105</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_38">
+    <YPosition rdf:datatype="&xsd;#integer">94</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_39">
+    <YPosition rdf:datatype="&xsd;#integer">87</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_40">
+    <YPosition rdf:datatype="&xsd;#integer">88</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_41">
+    <YPosition rdf:datatype="&xsd;#integer">99</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_42">
+    <YPosition rdf:datatype="&xsd;#integer">104</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_43">
+    <YPosition rdf:datatype="&xsd;#integer">104</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_44">
+    <YPosition rdf:datatype="&xsd;#integer">98</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_45">
+    <YPosition rdf:datatype="&xsd;#integer">114</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_46">
+    <YPosition rdf:datatype="&xsd;#integer">115</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_47">
+    <YPosition rdf:datatype="&xsd;#integer">126</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_48">
+    <YPosition rdf:datatype="&xsd;#integer">125</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_49">
+    <YPosition rdf:datatype="&xsd;#integer">1</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_50">
+    <YPosition rdf:datatype="&xsd;#integer">0</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_51">
+    <YPosition rdf:datatype="&xsd;#integer">169</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_52">
+    <YPosition rdf:datatype="&xsd;#integer">158</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_53">
+    <YPosition rdf:datatype="&xsd;#integer">147</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_54">
+    <YPosition rdf:datatype="&xsd;#integer">144</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_55">
+    <YPosition rdf:datatype="&xsd;#integer">140</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_56">
+    <YPosition rdf:datatype="&xsd;#integer">138</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_57">
+    <YPosition rdf:datatype="&xsd;#integer">139</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_58">
+    <YPosition rdf:datatype="&xsd;#integer">144</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_59">
+    <YPosition rdf:datatype="&xsd;#integer">146</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_60">
+    <YPosition rdf:datatype="&xsd;#integer">148</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_61">
+    <YPosition rdf:datatype="&xsd;#integer">155</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_62">
+    <YPosition rdf:datatype="&xsd;#integer">156</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_63">
+    <YPosition rdf:datatype="&xsd;#integer">159</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_64">
+    <YPosition rdf:datatype="&xsd;#integer">173</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_65">
+    <YPosition rdf:datatype="&xsd;#integer">174</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_66">
+    <YPosition rdf:datatype="&xsd;#integer">165</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_67">
+    <YPosition rdf:datatype="&xsd;#integer">171</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_68">
+    <YPosition rdf:datatype="&xsd;#integer">171</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_69">
+    <YPosition rdf:datatype="&xsd;#integer">129</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_70">
+    <YPosition rdf:datatype="&xsd;#integer">134</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_71">
+    <YPosition rdf:datatype="&xsd;#integer">137</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_72">
+    <YPosition rdf:datatype="&xsd;#integer">139</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_73">
+    <YPosition rdf:datatype="&xsd;#integer">141</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_74">
+    <YPosition rdf:datatype="&xsd;#integer">141</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_75">
+    <YPosition rdf:datatype="&xsd;#integer">145</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_76">
+    <YPosition rdf:datatype="&xsd;#integer">152</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_77">
+    <YPosition rdf:datatype="&xsd;#integer">153</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_78">
+    <YPosition rdf:datatype="&xsd;#integer">149</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_79">
+    <YPosition rdf:datatype="&xsd;#integer">151</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_80">
+    <YPosition rdf:datatype="&xsd;#integer">148</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_81">
+    <YPosition rdf:datatype="&xsd;#integer">140</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_82">
+    <YPosition rdf:datatype="&xsd;#integer">135</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_83">
+    <YPosition rdf:datatype="&xsd;#integer">135</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_84">
+    <YPosition rdf:datatype="&xsd;#integer">131</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_85">
+    <YPosition rdf:datatype="&xsd;#integer">167</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_86">
+    <YPosition rdf:datatype="&xsd;#integer">166</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_87">
+    <YPosition rdf:datatype="&xsd;#integer">170</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_88">
+    <YPosition rdf:datatype="&xsd;#integer">174</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_89">
+    <YPosition rdf:datatype="&xsd;#integer">176</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_90">
+    <YPosition rdf:datatype="&xsd;#integer">183</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_91">
+    <YPosition rdf:datatype="&xsd;#integer">189</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_92">
+    <YPosition rdf:datatype="&xsd;#integer">188</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_93">
+    <YPosition rdf:datatype="&xsd;#integer">182</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_94">
+    <YPosition rdf:datatype="&xsd;#integer">188</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_95">
+    <YPosition rdf:datatype="&xsd;#integer">189</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_96">
+    <YPosition rdf:datatype="&xsd;#integer">187</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_97">
+    <YPosition rdf:datatype="&xsd;#integer">176</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_98">
+    <YPosition rdf:datatype="&xsd;#integer">169</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_99">
+    <YPosition rdf:datatype="&xsd;#integer">163</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_100">
+    <YPosition rdf:datatype="&xsd;#integer">161</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_101">
+    <YPosition rdf:datatype="&xsd;#integer">161</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_102">
+    <YPosition rdf:datatype="&xsd;#integer">162</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_103">
+    <YPosition rdf:datatype="&xsd;#integer">164</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_104">
+    <YPosition rdf:datatype="&xsd;#integer">164</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_105">
+    <YPosition rdf:datatype="&xsd;#integer">172</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_106">
+    <YPosition rdf:datatype="&xsd;#integer">175</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_107">
+    <YPosition rdf:datatype="&xsd;#integer">169</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_108">
+    <YPosition rdf:datatype="&xsd;#integer">172</YPosition>
+  </Pt>
+  <Pt rdf:about="#Pt_109">
+    <YPosition rdf:datatype="&xsd;#integer">172</YPosition>
+  </Pt>
+</rdf:RDF>

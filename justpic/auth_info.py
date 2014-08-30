@@ -1,0 +1,7 @@
+app_id=1056026
+api_key=oA8jMPTjA8yrtaGsc2i5HHdx
+secrey_key=kas6A0XFr7uArRnXL4Da0GCvyxRqRiWw
+AK=oA8jMPTjA8yrtaGsc2i5HHdx
+SK=kas6A0XFr7uArRnXL4Da0GCvyxRqRiWw
+appid_bae=appid3293ebv2gq
+
