@@ -18,7 +18,21 @@
     {% block extra_js %}{% endblock %}
     <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    {% block extra_css %}{% endblock %}
+    <style type="text/css">
+    html,body{
+        height: 100%;
+    }
+ #wrap {
+     min-height: 80%;
+     height: auto !important;
+     height: 80%;
+     margin: 0 auto -60px;
+ }
+    </style>
+
+    {% block extra_css %}
+
+    {% endblock %}
 </head>
 <body>
 <div class="content">
@@ -82,8 +96,15 @@
         </div>
     </div>
 </div>
+<div id="wrap">
 {% block content %}
 {% endblock %}
-<a href="https://www.upyun.com/"><img src="http://upfiles.b0.upaiyun.com/logo/90x45.png" alt="UPYUN"></a>
+</div>
+<div id="footer">
+      <div class="container">
+       <a href="https://www.upyun.com/" class="pull-right"><img src="http://upfiles.b0.upaiyun.com/logo/90x45.png" alt="UPYUN"></a>
+      </div>
+</div>
+
 </body>
 </html>
