@@ -1,5 +1,0 @@
-<uwsgi>
-    <socket>127.0.0.1:8630</socket>
-    <pythonpath>/home/sn0w/Projects/justpc/1</pythonpath>
-    <module>wsgi</module>
-</uwsgi>
