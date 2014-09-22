@@ -88,7 +88,8 @@ $(document).ready(function () {
                     var $lielem = $("<li class=''></li>");
                     $lielem.attr("id", this.id);
                     var $imgelem = $("<img class='img-polaroid'/>");
-                    $imgelem.attr("src", "/media/" + this.src);
+//                    $imgelem.attr("src", "/media/" + this.src);
+                    $imgelem.attr("src", this.src);
                     $lielem.append($imgelem);
                     $pictureselems.append($lielem);
                 });

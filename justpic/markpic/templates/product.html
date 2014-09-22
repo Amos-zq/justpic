@@ -1,4 +1,9 @@
-﻿{% extends "home.html" %}
+{% extends "home.html" %}
+{% block extrea_menu %}
+    <a class="brand pull-left" href="/processinit">标注</a>
+    <a class="brand pull-left" href="/private">个人图库</a>
+    <a class="brand pull-left" href="/project">项目</a>
+{% endblock %}
 {% block extra_js %}
     <script type="text/javascript" src="{{ STATIC_URL }}js/custom.js"></script>
 {% endblock %}
@@ -35,9 +40,8 @@
             </div>
             <div class="span1 pull-right">
                 <a class="btn-small pull-left">积分榜</a>
-                <a href="http://github.com/matrixorz/justpic">关于积分榜的算法</a>
+
             </div>
-        </div>
         </div>
     </div>
 

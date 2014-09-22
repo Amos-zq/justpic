@@ -79,7 +79,8 @@ def querypic(word):
             # response = pcs.thumbnail(request_url, 512, 512)
             # #'/apps/justpic/5K/118000/118097.jpeg'
             # ownpic.src = response.url
-            ownpic["src"]=str(pic.picpath)
+            # print str(pic.picpath)[18:]
+            ownpic["src"]="http://justpic.b0.upaiyun.com/"+str(pic.picpath)[18:]+"!v1"
             piclist.append(ownpic)
         return piclist
     else:
@@ -103,7 +104,7 @@ class Log5KSitemap(Sitemap):
 @csrf_exempt
 def home(request):
     if request.user.is_authenticated():
-        return render_to_response('index.html', context_instance=RequestContext(request, processors=[custom_proc]))
+        return render_to_response('product.html', context_instance=RequestContext(request, processors=[custom_proc]))
     else:
         return render_to_response('login.html',context_instance=RequestContext(request))
 
@@ -159,7 +160,7 @@ def test(request):
 @login_required
 def processInit(request):
     c = RequestContext(request, processors=[custom_proc])
-    return render_to_response('index.html', context_instance=RequestContext(request, processors=[custom_proc]))
+    return render_to_response('product.html', context_instance=RequestContext(request, processors=[custom_proc]))
 
 
 def processLableMe(request):
