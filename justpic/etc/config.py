@@ -1,0 +1,1 @@
+path_5k=r"/home/sn0w/Projects/justpic/1/media/imagepool/5K"

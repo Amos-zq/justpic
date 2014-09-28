@@ -175,9 +175,7 @@ h1{
 	Progress Bars
 --------------------------*/
 #dropbox .result{
-	
 	height:30px;
-	position:absolute;
 	bottom:-40px;
 }
 #dropbox .result .fileurl{

@@ -55,7 +55,7 @@ $(function(){
 			//var rtn = eval('('+response+')');
             if (response.status)
             {
-               $.data(file).find('.fileurl').val(response.filename);
+               $.data(file).find('.fileurl').attr("href",response.filename);
             }
 			else
 				showMessage(response.message);
@@ -106,11 +106,8 @@ $(function(){
 							'<img />'+
 							'<span class="uploaded"></span>'+
 						'</span>'+
-						'<div class="result">'+
-						'<input type="text" class="fileurl"/>'+
-					     '</div>'+
 						'<div class="progressHolder">'+
-							'<div class="progress"></div>'+
+							'<div class="progress"><a class="fileurl">外链</a></div>'+
 						'</div>'+
 					'</div>'; 
 	

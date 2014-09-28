@@ -1,6 +1,7 @@
 import os
 import MySQLdb
 import sys
+import config
 sys.path.insert(0,'../')
 sys.path.insert(0,'./')
 from markpic.models import *
@@ -71,7 +72,7 @@ class BlobDataTestor:
     def testRWBlobData(self):
         filter = [".jpg", ".png", ".jpeg"]
         pic5klist = []
-        path5k = r"/home/sn0w/Projects/justpic/1/media/imagepool/5K"
+        path5k = config.path_5k
         search(path5k, filter, pic5klist)
         #corel 30k is not included
         # pic30klist = []
