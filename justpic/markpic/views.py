@@ -22,7 +22,7 @@ from django.contrib.sitemaps import Sitemap
 from markpic.mark import  word2another
 
 import upyun
-up=upyun.UpYun('justpic','justpic','woshi007',timeout=30,endpoint=upyun.ED_AUTO)
+up=upyun.UpYun('justpic','justpic','123111abc',timeout=30,endpoint=upyun.ED_AUTO)
 
 def genePicName():
     #picindex=random.randint(0,1)
