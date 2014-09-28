@@ -2,7 +2,10 @@ import os
 import MySQLdb
 import sys
 sys.path.insert(0,'../')
+sys.path.insert(0,'./')
 from markpic.models import *
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "annotation.settings")
+
 class pic:
     def __init__(self):
         self.name = ''
@@ -25,7 +28,7 @@ def search(folder, filter, piclist):
             if count > 0:
                 cur = pic()
                 cur.name = name
-                cur.path = os.path.normcase(curname)
+                cur.path = os.path.normcase(curname[curname.find('5K'):])
                 piclist.append(cur)
         else:
             search(curname, filter, piclist)
@@ -68,7 +71,7 @@ class BlobDataTestor:
     def testRWBlobData(self):
         filter = [".jpg", ".png", ".jpeg"]
         pic5klist = []
-        path5k = r"../media/imagepool/5K"
+        path5k = r"/home/sn0w/Projects/justpic/1/media/imagepool/5K"
         search(path5k, filter, pic5klist)
         #corel 30k is not included
         # pic30klist = []

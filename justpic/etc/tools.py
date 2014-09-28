@@ -2,6 +2,9 @@
 import sys
 sys.path.insert(0,'../')
 sys.path.insert(0,'./')
+import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "annotation.settings")
+
 from markpic.models import KeyWord5K,Picture5K
 words_list=[]
 for line in open("../markpic/words"):

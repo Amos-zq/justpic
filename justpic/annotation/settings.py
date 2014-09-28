@@ -162,11 +162,13 @@ WSGI_APPLICATION = 'annotation.wsgi.application'
 #     # Don't forget to use absolute paths, not relative paths.
 # )
 
+# AUTH_PROFILE_MODULE = 'markpic.UserProfile'
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    #'django.contrib.sites',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
@@ -213,4 +215,4 @@ LOGGING = {
     }
 }
 
-AUTH_PROFILE_MODULE='markpic.models.UserInfo'
+AUTH_PROFILE_MODULE='markpic.UserProfile'

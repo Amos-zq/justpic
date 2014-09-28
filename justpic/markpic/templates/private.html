@@ -1,6 +1,57 @@
 {% extends "home.html" %}
-
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}/css/style.css"/>
+{% endblock %}
+{% block jquery %}
+    <script src="http://libs.baidu.com/jquery/1.8.2/jquery.js"></script>
+{% endblock %}
+{% block extra_js %}
+    <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+{% endblock %}
 {% block content %}
-<p>个人图库</p>
+    <div class="span10">
+    <div id="dropbox">
+{#        {% for picture in piclist %}#}
+{#            <li id="{{ picture.picid }}" class="">#}
+{#                <img src="{{ picture.picurl }}" class="img-polaroid">1#}
+{#            </li>#}
+{#        {% endfor %}#}
+        {% for picture in piclist %}
+                    <div class="preview" >
+						<span class="imageHolder">
+							<img src="{{ picture.picurl }}" />
+							<span class="uploaded"></span>
+						</span>
+						<div class="result">
+						<input type="button" class="btn-small" value="Edit"/>
+						<input type="button" class="btn-small" value="Delete"/>
+					    </div>
+{#						<div class="progressHolder">#}
+{#							<div class="progress"></div>#}
+{#						</div>#}
+					</div>
+        {% endfor %}
 
+        <span class="message">
+                {% csrf_token %}
+        </span>
+
+    </div>
+    </div>
+    <div class="span2">
+<form class="form-search">
+  <div class="input-append">
+    <input type="text" class="span2 search-query">
+    <button type="submit" class="btn">Search</button>
+  </div>
+</form>
+    </div>
+    <footer>
+        <em class="pull-left">您可以通过标注图像获取积分来获取图片上传数量的额度</em> 直接将图片拖入到图像框完成上传
+    </footer>
+    <script src="http://libs.baidu.com/jquery/1.8.2/jquery.js"></script>
+    <script src="{{ STATIC_URL }}/js/jquery.filedrop.js"></script>
+    <script src="{{ STATIC_URL }}/js/script.js"></script>
 {% endblock %}

@@ -1,4 +1,43 @@
+document.write("<script src='/static/js/json2.js'></script>");
+document.write("<script src='/static/js/jquery.json.js'></script>");
+$(document).ajaxSend(function (event, xhr, settings) {
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie != '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
 
+    function sameOrigin(url) {
+        // url could be relative or scheme relative or absolute
+        var host = document.location.host; // host + port
+        var protocol = document.location.protocol;
+        var sr_origin = '//' + host;
+        var origin = protocol + sr_origin;
+        // Allow absolute or scheme relative URLs to same origin
+        return (url == origin || url.slice(0, origin.length + 1) == origin + '/') ||
+            (url == sr_origin || url.slice(0, sr_origin.length + 1) == sr_origin + '/') ||
+            // or any other URL that isn't scheme relative or absolute i.e relative.
+            !(/^(\/\/|http:|https:).*/.test(url));
+    }
+
+    function safeMethod(method) {
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+
+    if (!safeMethod(settings.type) && sameOrigin(settings.url)) {
+        xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
+    }
+});
 $(function(){
 	
 	var dropbox = $('#dropbox'),
@@ -6,17 +45,18 @@ $(function(){
 	
 	dropbox.filedrop({
 		// The name of the $_FILES entry:
-		paramname:'uploaded_file',
+		paramname:'thefile',
 		maxfiles: 10,
     	maxfilesize: 2000,
-		url: 'upload',
-		
+		url: '/upload',
+		withCredentials: false,
 		uploadFinished:function(i,file,response){
 			$.data(file).addClass('done');
 			//var rtn = eval('('+response+')');
-			if(response.code==0){
-				$.data(file).find('.fileurl').val(response.data);
-			}
+            if (response.status)
+            {
+               $.data(file).find('.fileurl').val(response.filename);
+            }
 			else
 				showMessage(response.message);
 			// response is the JSON object that post_file.php returns
@@ -50,6 +90,8 @@ $(function(){
 		},
 		
 		uploadStarted:function(i, file, len){
+            console.log(i);
+            console.log(file);
 			createImage(file);
 		},
 		
